@@ -1,4 +1,8 @@
-# Introduction
+# Deprecated for MilestonePSTools
+
+The capabilities of the ConfigImportExportUtil application have been surpassed by the MilestonePSTools project. Rather than have a single executable with obscure command-line parameters, I recommend exploring the capabilities of MilestonePSTools which is a PowerShell module built on top of Milestone's MIP SDK.
+
+## Introduction
 The configuration import / export utility is designed to enable users to make common configuration changes to their XProtect Advanced VMS system in bulk. Common usage scenarios include...
 
 Modify the username and/or password used to authenticate with hardware devices. This is useful if your camera vendor provides a tool to change passwords for your cameras in bulk. With the config import/export utility, you can very quickly update the password used by Milestone to match the new password(s) on your devices.
@@ -62,7 +66,7 @@ Copyright c  2017
   --version         Display version information.
 ```  
 
-# Examples
+## Examples
 Update the password for all hardware configured in the VMS in one command (note: this does not change the password on the device itself, only the password used by the VMS):
 ```
 configimportexportutil.exe -u -k hardware --property password --value newS3cretPassw0rd
